@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reyajedrez.modelo;
 
+import java.util.Objects;
+
 public class Posicion {
 
     private int fila;
@@ -46,6 +48,11 @@ public class Posicion {
     @Override
     private int hashCode() {
         return Objects.hash(getFila(), getColumna());
+    } //me obliga a ponerlo public. También he tenido que importar java.util.Objects.
+
+    @Override
+    public String toString(){
+        return "La Posición de la ficha es: fila "+fila+", columna "+columna+".";
     }
 
 }
