@@ -9,5 +9,9 @@ public enum Color {
     private Color(String colores) {
         this.cadenaAMostrar = colores;
     }
+    @Override
+    public String toString() {
+        return cadenaAMostrar;
+    }
 
 }
