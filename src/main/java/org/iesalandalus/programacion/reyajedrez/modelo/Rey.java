@@ -25,5 +25,13 @@ public class Rey {
         colorRey = Color.BLANCO;
         posicionRey = new Posicion(1, 'e');
     }
+    private Rey (Color colorR){
+        colorRey = colorR;
+        if (colorR == Color.BLANCO){
+            posicionRey = new Posicion(1, 'e');
+        } else {
+            posicionRey = new Posicion(8, 'e');
+        }
+    }
 
 }
