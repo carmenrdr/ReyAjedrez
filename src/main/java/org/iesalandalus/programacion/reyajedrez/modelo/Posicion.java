@@ -37,4 +37,15 @@ public class Posicion {
         this.columna = otraPosicion.getColumna();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Posicion posicion)) return false;
+        return getFila()==posicion.getFila() && getColumna()==posicion.getColumna();
+    }
+    @Override
+    private int hashCode() {
+        return Objects.hash(getFila(), getColumna());
+    }
+
 }
