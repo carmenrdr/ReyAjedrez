@@ -21,6 +21,9 @@ public class Rey {
     }
     //Uso colorR y posicionR para distinguir los parámetros de los atributos.
 
-
+    private Rey (){
+        colorRey = Color.BLANCO;
+        posicionRey = new Posicion(1, 'e');
+    }
 
 }
