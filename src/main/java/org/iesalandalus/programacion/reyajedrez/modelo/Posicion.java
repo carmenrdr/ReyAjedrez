@@ -52,7 +52,7 @@ public class Posicion {
 
     @Override
     public String toString(){
-        return "La Posición de la ficha es: fila "+fila+", columna "+columna+".";
+        return "La Posición de la ficha es: fila = "+fila+", columna = "+columna+".";
     }
 
 }
