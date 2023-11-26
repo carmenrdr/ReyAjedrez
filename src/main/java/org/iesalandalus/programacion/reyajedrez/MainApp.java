@@ -1,6 +1,7 @@
 package org.iesalandalus.programacion.reyajedrez;
 
 import org.iesalandalus.programacion.reyajedrez.modelo.Rey;
+import org.iesalandalus.programacion.reyajedrez.modelo.Color;
 
 import javax.naming.OperationNotSupportedException;
 
@@ -24,7 +25,7 @@ public class MainApp {
     }
 
     private void crearReyColor(){
-        elegirOpcionColor();
+        mostrarMenuColor();
         nuestroRey = new Rey(elegirOpcionColor());
     }
 

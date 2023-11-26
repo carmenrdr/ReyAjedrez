@@ -27,11 +27,12 @@ public class Consola {
         System.out.println("La opción elegida es: " + eleccion + ".");
     }
 
-    public static void elegirOpcionColor() {
-        System.out.println ("Los colores son: \n" +
+    public static void mostrarMenuColor() {
+        System.out.println("Los colores son: \n" +
                 "1. Blanco. \n" +
                 "2. Negro.");
-
+    }
+    public static Color elegirOpcionColor(){
         Scanner opcion = new Scanner(System.in);
         int eleccion;
         do {
