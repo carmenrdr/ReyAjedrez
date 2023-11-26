@@ -1,6 +1,7 @@
 package org.iesalandalus.programacion.reyajedrez;
 
 import org.iesalandalus.programacion.reyajedrez.modelo.Color;
+import org.iesalandalus.programacion.reyajedrez.modelo.Direccion;
 
 import java.util.Scanner;
 
@@ -52,6 +53,18 @@ public class Consola {
                 "8. Noroeste. \n" +
                 "9. Enroque corto. \n" +
                 "10. Enroque largo.");
+    }
+
+    public static void elegirDireccion(){
+        Scanner opcion = new Scanner(System.in);
+        int eleccion;
+        do {
+            System.out.print("Elija una dirección: ");
+            eleccion = opcion.nextInt();
+        } while (eleccion<1 || eleccion>10);
+        System.out.println("La direccion elegida es: "+ Direccion.values()[eleccion-1]+".");
+
+        }
     }
 
 }
