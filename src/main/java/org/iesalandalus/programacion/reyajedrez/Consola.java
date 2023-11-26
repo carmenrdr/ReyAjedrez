@@ -40,4 +40,18 @@ public class Consola {
         System.out.println("El color elegido es: " + Color.values()[eleccion-1] +"."); //'eleccion' es -1 ya que en la clase Color asignan a Blanco 0 y a Negro 1.
     }
 
+    public static void mostrarMenuDirecciones(){
+        System.out.println("Las opciones de dirección son las siguientes: \n"+
+                "1. Norte. \n" +
+                "2. Noreste. \n" +
+                "3. Este. \n" +
+                "4. Sureste. \n" +
+                "5. Sur. \n" +
+                "6. Suroeste. \n" +
+                "7. Oeste. \n" +
+                "8. Noroeste. \n" +
+                "9. Enroque corto. \n" +
+                "10. Enroque largo.");
+    }
+
 }
