@@ -70,7 +70,7 @@ public class Consola {
     }
 
     public static void despedirse(){
-        System.out.print("¡Hasta luego!");
+        System.out.println("¡Hasta luego!");
     }
 
 }
