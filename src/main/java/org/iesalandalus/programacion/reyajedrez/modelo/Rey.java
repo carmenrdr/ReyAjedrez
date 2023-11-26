@@ -24,11 +24,11 @@ public class Rey {
     }
     //Uso colorR y posicionR para distinguir los parámetros de los atributos.
 
-    private Rey (){
+    public Rey (){
         colorRey = Color.BLANCO;
         posicionRey = new Posicion(1, 'e');
     }
-    private Rey (Color colorR){
+    public Rey (Color colorR){
         colorRey = colorR;
         if (colorR == Color.BLANCO){
             posicionRey = new Posicion(1, 'e');

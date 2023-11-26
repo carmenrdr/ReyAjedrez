@@ -17,5 +17,8 @@ public class MainApp {
         }
     }
 
+    private void crearReyDefecto(){
+        nuestroRey = new Rey();
+    }
 
 }
