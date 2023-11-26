@@ -55,7 +55,7 @@ public class Consola {
                 "10. Enroque largo.");
     }
 
-    public static void elegirDireccion(){
+    public static Direccion elegirDireccion(){
         Scanner opcion = new Scanner(System.in);
         int eleccion;
         do {
@@ -63,6 +63,7 @@ public class Consola {
             eleccion = opcion.nextInt();
         } while (eleccion<1 || eleccion>10);
         System.out.println("La direccion elegida es: "+ Direccion.values()[eleccion-1]+".");
+        return null;
     }
 
     public static void despedirse(){
