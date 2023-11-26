@@ -63,8 +63,10 @@ public class Consola {
             eleccion = opcion.nextInt();
         } while (eleccion<1 || eleccion>10);
         System.out.println("La direccion elegida es: "+ Direccion.values()[eleccion-1]+".");
+    }
 
-        }
+    public static void despedirse(){
+        System.out.print("¡Hasta luego!");
     }
 
 }
