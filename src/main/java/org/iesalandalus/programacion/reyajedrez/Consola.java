@@ -10,10 +10,10 @@ public class Consola {
     private Consola(){}
 
     public static void mostrarMenu() {
-        System.out.println("Las opciones son las siguientes: \n" +
-                "1. Crea un rey por defecto.\n" +
-                "2. Crea un rey eligiendo el color.\n" +
-                "3. Mover pieza.\n" +
+        System.out.println("Las opciones son las siguientes: \n"+
+                "1. Crea un rey por defecto.\n"+
+                "2. Crea un rey eligiendo el color.\n"+
+                "3. Mover pieza.\n"+
                 "4. Salir del juego.");
     }
 
@@ -28,8 +28,8 @@ public class Consola {
     }
 
     public static void mostrarMenuColor() {
-        System.out.println("Los colores son: \n" +
-                "1. Blanco. \n" +
+        System.out.println("Los colores son: \n"+
+                "1. Blanco. \n"+
                 "2. Negro.");
     }
     public static Color elegirOpcionColor(){
@@ -46,15 +46,15 @@ public class Consola {
 
     public static void mostrarMenuDirecciones(){
         System.out.println("Las opciones de dirección son las siguientes: \n"+
-                "1. Norte. \n" +
-                "2. Noreste. \n" +
-                "3. Este. \n" +
-                "4. Sureste. \n" +
-                "5. Sur. \n" +
-                "6. Suroeste. \n" +
-                "7. Oeste. \n" +
-                "8. Noroeste. \n" +
-                "9. Enroque corto. \n" +
+                "1. Norte. \n"+
+                "2. Noreste. \n"+
+                "3. Este. \n"+
+                "4. Sureste. \n"+
+                "5. Sur. \n"+
+                "6. Suroeste. \n"+
+                "7. Oeste. \n"+
+                "8. Noroeste. \n"+
+                "9. Enroque corto. \n"+
                 "10. Enroque largo.");
     }
 
