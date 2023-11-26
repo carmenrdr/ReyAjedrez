@@ -43,7 +43,7 @@ public class Rey {
         if (posicionRey.getFila()==1 && (movimiento==Direccion.SUR || movimiento==Direccion.SURESTE || movimiento==Direccion.SUROESTE)) {
             throw new OperationNotSupportedException("Movimiento inválido. La ficha se sale del tablero.");
         }
-        if (posicionRey.getFila()==8 && (movimiento==Direccion.NORTE || movimiento=Direccion.NORESTE || movimiento=Direccion.NOROESTE)){
+        if (posicionRey.getFila()==8 && (movimiento==Direccion.NORTE || movimiento==Direccion.NORESTE || movimiento==Direccion.NOROESTE)){
             throw new OperationNotSupportedException("Movimiento inválido. La ficha se sale del tablero.");
         }
         if (posicionRey.getColumna()=='a' && (movimiento==Direccion.OESTE || movimiento==Direccion.NOROESTE || movimiento==Direccion.SUROESTE)){
