@@ -73,4 +73,9 @@ public class Rey {
         totalMovimientos = totalMovimientos+1;
     }
 
+    @Override
+    public String toString(){
+        return "El color del Rey es "+colorRey+" y su posición es "+posicionRey+".";
+    }
+
 }
