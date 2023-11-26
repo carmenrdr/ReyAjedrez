@@ -55,6 +55,22 @@ public class Rey {
         if (totalMovimientos>0 && (movimiento==Direccion.ENROQUE_CORTO || movimiento==Direccion.ENROQUE_LARGO)){
             throw new OperationNotSupportedException("Movimiento inválido. No se puede hacer enroque.");
         }
+
+        switch (movimiento){
+            case NORTE -> posicionRey = new Posicion(posicionRey.getFila()+1, posicionRey.getColumna());
+            case SUR -> posicionRey = new Posicion(posicionRey.getFila()-1, posicionRey.getColumna());
+            case ESTE -> posicionRey = new Posicion(posicionRey.getFila(), (char) (posicionRey.getColumna()+1));
+                //Para sumar y restar también en columna, hay que devolver el valor en char tras hacer la cuenta para que se mantenga como letra.
+            case OESTE -> posicionRey = new Posicion(posicionRey.getFila(), (char) (posicionRey.getColumna()-1));
+            case NORESTE -> posicionRey = new Posicion(posicionRey.getFila()+1, (char) (posicionRey.getColumna()+1));
+            case NOROESTE -> posicionRey = new Posicion(posicionRey.getFila()+1, (char) (posicionRey.getColumna()-1));
+            case SURESTE -> posicionRey = new Posicion(posicionRey.getFila()-1, (char) (posicionRey.getColumna()+1));
+            case SUROESTE -> posicionRey = new Posicion (posicionRey.getFila()-1, (char) (posicionRey.getColumna()-1));
+            case ENROQUE_CORTO -> posicionRey = new Posicion (posicionRey.getFila(), (char) (posicionRey.getColumna()+2));
+            case ENROQUE_LARGO -> posicionRey = new Posicion(posicionRey.getFila(), (char) (posicionRey.getColumna()-2));
+        }
+
+        totalMovimientos = totalMovimientos+1;
     }
 
 }
