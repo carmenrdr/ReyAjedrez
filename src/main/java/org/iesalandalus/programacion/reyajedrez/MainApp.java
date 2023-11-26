@@ -15,7 +15,7 @@ public class MainApp {
             case 1 -> crearReyDefecto();
             case 2 -> crearReyColor();
             case 3 -> mover();
-            case 4 -> ;
+            case 4 -> despedirse();
         }
     }
 
