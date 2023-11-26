@@ -7,8 +7,6 @@ import javax.naming.OperationNotSupportedException;
 import static org.iesalandalus.programacion.reyajedrez.Consola.*;
 
 public class MainApp {
-    public static void main(String[] args) {
-    }
 
     public Rey nuestroRey;
 
@@ -35,4 +33,18 @@ public class MainApp {
         nuestroRey.mover(elegirDireccion());
     }
 
+    private void mostrarRey(){
+        System.out.println(nuestroRey.toString());
+    }
+
+    public static void main(String[] args) throws OperationNotSupportedException {
+        MainApp aplicacion = new MainApp();
+        int eleccion = 0;
+        do {
+            mostrarMenu();
+            elegirOpcionMenu();
+            aplicacion.ejecutarOpcion(eleccion);
+            aplicacion.mostrarRey();
+        } while (eleccion != 4);
+    }
 }
