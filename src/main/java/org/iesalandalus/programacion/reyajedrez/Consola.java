@@ -39,7 +39,9 @@ public class Consola {
             System.out.print("Elija un color: ");
             eleccion = opcion.nextInt();
         } while (eleccion <1 || eleccion >2);
-        System.out.println("El color elegido es: " + Color.values()[eleccion-1] +"."); //'eleccion' es -1 ya que en la clase Color asignan a Blanco 0 y a Negro 1.
+        System.out.println("El color elegido es: " + Color.values()[eleccion-1] +".");
+        //'eleccion' es -1 ya que en la clase Color asignan a Blanco 0 y a Negro 1.
+        return null;
     }
 
     public static void mostrarMenuDirecciones(){
