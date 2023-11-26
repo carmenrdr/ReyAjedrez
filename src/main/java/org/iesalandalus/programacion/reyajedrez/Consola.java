@@ -17,14 +17,14 @@ public class Consola {
                 "4. Salir del juego.");
     }
 
-    public static void elegirOpcionMenu() {
+    public static int elegirOpcionMenu() {
         Scanner opcion = new Scanner(System.in);
-        int eleccion;
+        int eleccion = 0;
         do {
             System.out.print("Elija una opción: ");
             eleccion = opcion.nextInt();
         } while (eleccion < 1 || eleccion > 4);
-        System.out.println("La opción elegida es: " + eleccion + ".");
+        return eleccion;
     }
 
     public static void mostrarMenuColor() {
@@ -34,14 +34,14 @@ public class Consola {
     }
     public static Color elegirOpcionColor(){
         Scanner opcion = new Scanner(System.in);
-        int eleccion;
+        int eleccion = 0;
         do {
             System.out.print("Elija un color: ");
             eleccion = opcion.nextInt();
         } while (eleccion <1 || eleccion >2);
         System.out.println("El color elegido es: " + Color.values()[eleccion-1] +".");
         //'eleccion' es -1 ya que en la clase Color asignan a Blanco 0 y a Negro 1.
-        return null;
+        return Color.values()[eleccion-1];
     }
 
     public static void mostrarMenuDirecciones(){
@@ -60,13 +60,13 @@ public class Consola {
 
     public static Direccion elegirDireccion(){
         Scanner opcion = new Scanner(System.in);
-        int eleccion;
+        int eleccion = 0;
         do {
             System.out.print("Elija una dirección: ");
             eleccion = opcion.nextInt();
         } while (eleccion<1 || eleccion>10);
         System.out.println("La direccion elegida es: "+ Direccion.values()[eleccion-1]+".");
-        return null;
+        return Direccion.values()[eleccion-1];
     }
 
     public static void despedirse(){

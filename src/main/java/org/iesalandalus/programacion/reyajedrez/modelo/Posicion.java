@@ -46,13 +46,14 @@ public class Posicion {
         return getFila()==posicion.getFila() && getColumna()==posicion.getColumna();
     }
     @Override
-    private int hashCode() {
+    public int hashCode() {
         return Objects.hash(getFila(), getColumna());
-    } //me obliga a ponerlo public. También he tenido que importar java.util.Objects.
+    }
+    //Me obliga a ponerlo public. También he tenido que importar java.util.Objects.
 
     @Override
     public String toString(){
-        return "La Posición de la ficha es: fila = "+fila+", columna = "+columna+".";
+        return "fila "+fila+", columna "+columna;
     }
 
 }

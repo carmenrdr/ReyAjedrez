@@ -13,14 +13,14 @@ public class Rey {
         return colorRey;
     }
     private void setColor(Color colorR){
-        this.colorRey = colorR;
+        colorRey = colorR;
     }
 
     public Posicion getPosicion(){
         return posicionRey;
     }
     private void setPosicion(Posicion posicionR){
-        this.posicionRey = posicionR;
+        posicionRey = new Posicion(posicionR);
     }
     //Uso colorR y posicionR para distinguir los parámetros de los atributos.
 

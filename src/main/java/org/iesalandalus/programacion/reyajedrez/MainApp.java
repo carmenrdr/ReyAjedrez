@@ -1,7 +1,6 @@
 package org.iesalandalus.programacion.reyajedrez;
 
-import org.iesalandalus.programacion.reyajedrez.modelo.Rey;
-import org.iesalandalus.programacion.reyajedrez.modelo.Color;
+import org.iesalandalus.programacion.reyajedrez.modelo.*;
 
 import javax.naming.OperationNotSupportedException;
 
@@ -9,10 +8,10 @@ import static org.iesalandalus.programacion.reyajedrez.Consola.*;
 
 public class MainApp {
 
-    public Rey nuestroRey;
+    Rey nuestroRey;
 
-    private void ejecutarOpcion(int eleccion) throws OperationNotSupportedException {
-        switch (eleccion){
+    private void ejecutarOpcion(int opcion) throws OperationNotSupportedException {
+        switch (opcion){
             case 1 -> crearReyDefecto();
             case 2 -> crearReyColor();
             case 3 -> mover();
@@ -40,12 +39,12 @@ public class MainApp {
 
     public static void main(String[] args) throws OperationNotSupportedException {
         MainApp aplicacion = new MainApp();
-        int eleccion = 0;
+        int opcion;
         do {
             mostrarMenu();
-            elegirOpcionMenu();
-            aplicacion.ejecutarOpcion(eleccion);
+            opcion = elegirOpcionMenu();
+            aplicacion.ejecutarOpcion(opcion);
             aplicacion.mostrarRey();
-        } while (eleccion != 4);
+        } while (opcion != 4);
     }
 }
